@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package readinglist;
+
+option go_package = "github.com/coltonmorris/grpc-web/proto-types;proto-types";
+
+service ReadingList {
+    rpc AddBook(Book) returns (ServerMessage){ }
+    rpc RemoveBook(Book) returns (ServerMessage){ }
+}
+
+message Empty{}
+
+message Book{
+  string title = 1;
+  string author = 2;
+}
+
+message ServerMessage{
+  string message = 1;
+}

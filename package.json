@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "1. `npm run generate-server` for the grpc server stubs  2. `npm run generate-grpcClient` for the grpc client stubs 2. `make build-linux` for the docker container in the compose step 3. `docker-compose up --build` 4. Navigate to `localhost:8000`",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "grpc-web-client": "^0.5.0",
+    "ts-protoc-gen": "^0.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
